@@ -1,0 +1,244 @@
+:root {
+	--bs-accent-rgb: 224,27,36;
+}
+
+.text-accent-colour {
+	--bs-text-opacity: 1;
+	color: rgba(var(--bs-accent-rgb),var(--bs-text-opacity))!important;
+}
+nav {
+	&.primary-navigation {
+		margin: 0 auto;
+		display: block;
+
+		padding: 120px 0 0 0;  
+		text-align: center;
+		font-size: 16px;
+
+		ul li {
+			list-style: none;
+			margin: 0 auto;
+			border-left: 2px solid #e01b24;
+			display: inline-block;
+			padding: 0 30px;
+			position: relative;
+			text-decoration: none;
+			text-align: center;
+			font-family: arvo;
+		}
+
+		li a {
+			color: #deddda;
+		}
+
+		li a:hover {
+			color: #e01b24;
+		}
+
+		li:hover {
+			cursor: pointer;
+		}
+
+		ul li ul {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+padding-left: 0;
+			left: 0;
+			display: none;
+			background: white;
+		}
+
+		ul li:hover > ul,
+		ul li ul:hover {
+			visibility: visible;
+			opacity: 1;
+			display: block;
+			min-width: 250px;
+			text-align: left;
+			padding-top: 20px;
+			box-shadow: 0px 3px 5px -1px #ccc;
+		}
+
+		ul li ul li {
+			clear: both;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 20px;
+			border-style: none;
+		}
+
+		ul li ul li a:hover {
+			padding-left: 10px;
+			border-left: 2px solid #e01b24;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+a {
+
+		text-decoration: none;
+
+		&:hover {
+				color: #e01b24;
+		}
+
+}
+
+ ul li ul li a { transition: all 0.5s ease; }
+
+
+/* Button with Outline */
+.btn-outline-accent {
+	color: #ffffff;
+	border-color: #f6f5f4;
+}
+
+.btn-outline-accent:hover {
+	color: #fff;
+	background-color: #f6f5f4;
+	border-color: #ffffff;
+}
+
+/* Solid Button */
+.btn-accent {
+	color: #241f31;
+	background-color: #c0bfbc;
+	border-color: #000000;
+}
+
+.btn-accent:hover {
+	color: #fff;
+	background-color: #5e5c64;
+	border-color: #e01b24;
+}
+
+/* Scrollbar Colours */
+::-webkit-scrollbar {
+	width: 10px;
+	color: #e01b24;
+}
+
+::-webkit-scrollbar-track {
+	background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #e01b24;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #e01b24;
+}
+
+/* border colours */
+.border-accent {
+	border-color: #e01b24!important;
+}
+
+/* -- Commands CSS -- */
+
+/* Change the horizontal rule (line) on command page */
+hr {
+  border: 1px solid #e01b24;
+  margin: 1rem;
+  opacity: .25;
+}
+
+/* The colour outline when you focus on the search box */
+.search-box:focus {
+	border: 2px solid #e01b24;
+}
+
+/* Navbar Dropdown Hover */
+.dropdown-item:focus,.dropdown-item:hover {
+	color: #fff!important;
+	background-color: #e01b24!important;
+}
+
+/* No need to edit past this point unless you want to make the theme more unique */
+/* --------------------------------------------------------------------------------------------------------------------- */
+.footer-clean {
+  padding:50px 0;
+  color:#f8f9fa;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+/*  line-height:40px;*/
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+.card {
+  background-color: #2b2d30;
+  color: #fff;
+  margin-left: 9px;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(219, 219, 219);
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(219, 219, 219);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(219, 219, 219);
+}
